@@ -1,0 +1,49 @@
+/*设定字体间距和样式*/
+#drag-scroll{ letter-spacing:1px; font-family:Arial,"Microsoft Yahei";}
+
+/*设定类名样式*/
+.inblock{ display:inline-block; *display:inline; *zoom:1;}
+.vm{ vertical-align:middle;}
+.pa{ position:absolute;}
+.pr{ position:relative;}
+.ofh{ overflow:hidden;}
+.clearfix{ display:block;}
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; line-height:0;}
+*html .clearfix{ height:1%;}
+
+.drag-scroll ul{padding:0; border:0; outline:0; font-family:inherit; vertical-align:baseline;}
+.drag-scroll {width:1202px;margin:0 auto;}
+
+.dscroll-cards {width:203px; float:left;margin-right:1px; position: relative; overflow: hidden; transition: width 0.3s;}
+.dscroll-icon {background-image: url(./images/index_solu.png); background-repeat: no-repeat;}
+.dscroll-cards .nor {width:203px; height:240px;background: #4cc2ea;float:left;cursor:pointer;position: relative; z-index:2;}
+.dscroll-cards .nor .ds-cards-img {width:57px;height:57px; display: block; margin:46px auto 0}
+.dscroll-icon.ds-icon-1 {background-position: -8px -6px;}
+.dscroll-icon.ds-icon-2 {background-position: -80px -6px;}
+.dscroll-icon.ds-icon-3 {background-position: -153px -6px;}
+.dscroll-icon.ds-icon-4 {background-position: -225px -6px;}
+.dscroll-cards .nor a {display: block; position: absolute; width:100%; top:0; left:0; color:#fff;text-align: center; height:100%; line-height:28px; font-size:14px; overflow: hidden}
+.dscroll-cards .nor i {width:20px; height:20px; background-position: -118px -5px;}
+.dscroll-cards .nor .name_cn {margin-top:105px;height:32px; line-height: 32px; width:100%; overflow: hidden}
+.dscroll-cards .nor .name_en {font-size:10px; text-align: center; width:100%; height:23px; overflow: hidden; line-height: 23px;}
+.dscroll-cards .nor .line {height:1px; overflow: hidden; font-size:0; background: #fff; width:130px; display: block; margin:0 auto;}
+.dscroll-cards.open {width:589px; transition: width 0.3s;}
+.dscroll-cards.open .nor {background: #12b1e7}
+.dscroll-cards.open .ds-cards-img {background-position-y:-74px; animation: dragScrollAnim 1s ease; }
+.dscroll-cards.open .nor i {background-position: -152px -5px}
+.dscroll-cards.open .ds-cards-list {display: block;margin-left:205px;}
+.dscroll-cards .ds-cards-list {width:384px; height:240px; position: absolute; z-index: 1; right:0; top:0;}
+.dscroll-cards .ds-cards-list a.ds-list-more {display:block ;width:33px; height:240px; line-height: 240px; color:#fff; background:#12b1e7; float:right; vertical-align: middle; overflow: hidden}
+.dscroll-cards .ds-cards-list a.ds-list-more span {width:20px; height:38px; line-height: 16px;padding:0 6px; font-size: 14px; font-family: "microsoft yahei"; text-align: center;*margin-top:95px;}
+.dscroll-cards .ds-cards-list a.ds-list-more span i {background-position: -282px -8px;width:12px; height:34px;left:10px; bottom:-34px;}
+.dscroll-cards .ds-cards-list .ds-list-lis {width:338px; height:220px;float:left; padding:10px 7px;float:left;margin:0 0 0 -1px }
+.dscroll-cards .ds-cards-list .ds-list-lis ul {margin:0 0 -1px -1px;}
+.dscroll-cards .ds-cards-list .ds-list-lis li {width:112px; height:110px; float:left;margin:0 0 1px 1px;overflow:hidden}
+.dscroll-cards .ds-cards-list .ds-list-lis li a {display:none; position: absolute;width:100%; height:100%; line-height: 110px; font-size: 14px; color:#fff; text-align: center; vertical-align:middle; left:0; top:0; background-position: -5px -424px; text-indent: -9999px;}
+.dscroll-cards .ds-cards-list .ds-list-lis li:hover img { opacity: .5; }
+.dscroll-cards .ds-cards-list .ds-list-lis li:hover a {text-indent: 0;display: block;text-decoration: none}
+.dscroll-cards-line {height:1px; background:#bcbcbc;margin:45px auto; width:65%;position: relative}
+.dscroll-cards-line .ds-line-bar {width:25%; height:5px; background: #4cc2ea; position: absolute; top:-2px; cursor: pointer}
+.dscroll-cards-line .ds-line-bar.down {background: #29A1CA}
+@keyframes dragScrollAnim{0%{margin-top:-10px}40%{margin-top:50px}60%{margin-top:30px}70%{margin-top:50px}90%{margin-top:40px}100%{margin-top:45px}}
+.iconpic { background-image: url(./images/index_pic.png); }
